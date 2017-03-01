@@ -3,3 +3,6 @@
 
 [How to build libobjc (objc4-706)](http://blog.csdn.net/wotors/article/details/54426316) (Chinese Version)
 
+## changes
+
+add __OBJC2__ preprocessor macro
