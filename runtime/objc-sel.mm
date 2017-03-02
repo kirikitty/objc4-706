@@ -211,5 +211,4 @@ BOOL sel_isEqual(SEL lhs, SEL rhs)
     return bool(lhs == rhs);
 }
 
-
 #endif

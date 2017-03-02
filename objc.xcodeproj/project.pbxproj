@@ -25,7 +25,10 @@
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
-		5E1E1CFD1E374D1B005091E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E1CFC1E374D1B005091E2 /* main.m */; };
+		4B4BBC7A1E67BD3C00131F47 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
+		4B4BBC7C1E67BE5300131F47 /* kiri-test.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4BBC7B1E67BE5300131F47 /* kiri-test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B4BBC7E1E67BE5B00131F47 /* kiri-test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B4BBC7D1E67BE5B00131F47 /* kiri-test.mm */; };
+		5E1E1CFD1E374D1B005091E2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E1CFC1E374D1B005091E2 /* main.mm */; };
 		5E7A6AB51E3728B000859226 /* _simple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E7A6AA11E3728B000859226 /* _simple.h */; };
 		5E7A6AB61E3728B000859226 /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E7A6AA21E3728B000859226 /* Block_private.h */; };
 		5E7A6AB71E3728B000859226 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E7A6AA31E3728B000859226 /* CrashReporterClient.h */; };
@@ -121,7 +124,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E1E1D011E374D22005091E2 /* PBXContainerItemProxy */ = {
+		4B4BBC781E67BBD400131F47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -154,8 +157,10 @@
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
 		39ABD72012F0B61800D1054C /* objc-weak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-weak.mm"; path = "runtime/objc-weak.mm"; sourceTree = "<group>"; };
+		4B4BBC7B1E67BE5300131F47 /* kiri-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "kiri-test.h"; path = "test/kiri-test.h"; sourceTree = "<group>"; };
+		4B4BBC7D1E67BE5B00131F47 /* kiri-test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "kiri-test.mm"; path = "test/kiri-test.mm"; sourceTree = "<group>"; };
 		5E1E1CFA1E374D1B005091E2 /* debug-objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "debug-objc"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1E1CFC1E374D1B005091E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E1E1CFC1E374D1B005091E2 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		5E7A6AA11E3728B000859226 /* _simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
 		5E7A6AA21E3728B000859226 /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
 		5E7A6AA31E3728B000859226 /* CrashReporterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
@@ -261,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4BBC7A1E67BD3C00131F47 /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +301,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4B4BBC7D1E67BE5B00131F47 /* kiri-test.mm */,
 				8383A3A1122600E9009290B8 /* a1a2-blocktramps-arm.s */,
 				8383A3A2122600E9009290B8 /* a2a3-blocktramps-arm.s */,
 				838485B80D6D687300CEA253 /* hashtable2.mm */,
@@ -358,7 +365,7 @@
 		5E1E1CFB1E374D1B005091E2 /* debug-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5E1E1CFC1E374D1B005091E2 /* main.m */,
+				5E1E1CFC1E374D1B005091E2 /* main.mm */,
 			);
 			path = "debug-objc";
 			sourceTree = "<group>";
@@ -455,6 +462,7 @@
 				838485E90D6D68A200CEA253 /* objc-sync.h */,
 				838485EC0D6D68A200CEA253 /* objc.h */,
 				8384861A0D6D68A800CEA253 /* runtime.h */,
+				4B4BBC7B1E67BE5300131F47 /* kiri-test.h */,
 			);
 			name = "Public Headers";
 			sourceTree = "<group>";
@@ -535,6 +543,7 @@
 				5E7A6ABE1E3728B000859226 /* workqueue_private.h in Headers */,
 				838485F40D6D68A200CEA253 /* objc-class.h in Headers */,
 				838485F60D6D68A200CEA253 /* objc-config.h in Headers */,
+				4B4BBC7C1E67BE5300131F47 /* kiri-test.h in Headers */,
 				838485F80D6D68A200CEA253 /* objc-exception.h in Headers */,
 				5E7A6AB61E3728B000859226 /* Block_private.h in Headers */,
 				83BE02E80FCCB24D00661494 /* objc-file-old.h in Headers */,
@@ -584,7 +593,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5E1E1D021E374D22005091E2 /* PBXTargetDependency */,
+				4B4BBC791E67BBD400131F47 /* PBXTargetDependency */,
 			);
 			name = "debug-objc";
 			productName = "debug-objc";
@@ -686,7 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1E1CFD1E374D1B005091E2 /* main.m in Sources */,
+				5E1E1CFD1E374D1B005091E2 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +717,7 @@
 				838485FF0D6D68A200CEA253 /* objc-load.mm in Sources */,
 				838486010D6D68A200CEA253 /* objc-loadmethod.mm in Sources */,
 				838486020D6D68A200CEA253 /* objc-lockdebug.mm in Sources */,
+				4B4BBC7E1E67BE5B00131F47 /* kiri-test.mm in Sources */,
 				838486080D6D68A200CEA253 /* objc-runtime-new.mm in Sources */,
 				838486090D6D68A200CEA253 /* objc-runtime-old.mm in Sources */,
 				8384860B0D6D68A200CEA253 /* objc-runtime.mm in Sources */,
@@ -749,10 +759,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E1E1D021E374D22005091E2 /* PBXTargetDependency */ = {
+		4B4BBC791E67BBD400131F47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC0620554660B00DB518D /* objc */;
-			targetProxy = 5E1E1D011E374D22005091E2 /* PBXContainerItemProxy */;
+			targetProxy = 4B4BBC781E67BBD400131F47 /* PBXContainerItemProxy */;
 		};
 		837F67AD1A771F6E004D34FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -819,6 +829,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
 			};
 			name = Debug;
@@ -878,6 +889,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
 			};
 			name = Release;
@@ -1004,7 +1016,7 @@
 		5E1E1CFE1E374D1B005091E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1035,18 +1047,27 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(DSTROOT)/usr/include/**",
+					"$(DSTROOT)/usr/local/include/**",
+					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
+					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
+					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(SRCROOT)/include",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/../Intermediates/objc.build/Debug/objc.build/DerivedSources";
 			};
 			name = Debug;
 		};
 		5E1E1CFF1E374D1B005091E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1072,10 +1093,19 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(DSTROOT)/usr/include/**",
+					"$(DSTROOT)/usr/local/include/**",
+					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
+					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
+					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(SRCROOT)/include",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/../Intermediates/objc.build/Debug/objc.build/DerivedSources";
 			};
 			name = Release;
 		};
